@@ -1,5 +1,5 @@
 {% set name = "skywalking-eyes" %}
-{% set version = "0.4.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/apache/skywalking-eyes/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 9a8f9dc34772a1357dc4c578b065f07e1492230b7d767f91bffa5fd212c9a258
+  sha256: 24aea0bc1cefbfbc80b4c1b21f663e020df8377ed2a6b776ceaa96871a87f905
 
 build:
   number: 0
