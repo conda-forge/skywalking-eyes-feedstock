@@ -2,7 +2,7 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
 
-go build -buildmode=pie -trimpath -o=${PREFIX}/bin/${PKG_NAME} -ldflags="-s -w -X github.com/apache/skywalking-eyes/commands.version=${PKG_VERSION}" ./cmd/license-eye
+go build -o=${PREFIX}/bin/${PKG_NAME} -ldflags="-s -w -X github.com/apache/skywalking-eyes/commands.version=${PKG_VERSION}" ./cmd/license-eye
 go-licenses save ./cmd/license-eye --save_path=license-files
 
 if [[ ${build_platform} == ${target_platform} ]]; then
